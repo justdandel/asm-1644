@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>New Product</title>
+</head>
+<body>
+    <div class="container p-3 my-3 text-success">
+    <h1 style="text-align: center;">NEW PRODUCT</h1>
+  </div>
+<form action="/newProduct" method = "POST" style="text-align: center;">
+
+  <div class="container col-sm-4 form-outline mb-4">
+    <label class="form-label" for="form4Example1">Name</label>
+    <input type="text" name="txtName" id="form4Example1" class="form-control " />
+    <div style="color: red;">{{nameError}}</div>
+        </div>
+  </div>
+
+
+  <div class="container col-sm-4 form-outline mb-4">
+    <label class="form-label" for="form4Example2">Price</label>
+    <input type="number" name="txtPrice" id="form4Example2" class="form-control" />
+  </div>
+
+
+  <div class="container col-sm-4 form-outline mb-4">
+    <label class="form-label" for="form4Example3">Image</label>
+    <textarea class="form-control" name="txtPicture" id="form4Example3" rows="4"></textarea>
+  </div>
+
+
+ <input class="btn btn-success" type="submit" value="Add">
+ <input class="btn btn-success" type="button" value="Cancel" onclick="location.href='/';">
+</form>
+</div>
+</body>
+</html>
