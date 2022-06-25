@@ -55,6 +55,6 @@ app.get('/insert', (req, res) => {
 })
 
 
-const PORT = process.nextTick.PORT || 5000
+const PORT = process.env.PORT || 5000
 app.listen(PORT)
 console.log('server is running')
